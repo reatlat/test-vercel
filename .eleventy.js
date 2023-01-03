@@ -109,6 +109,8 @@ module.exports = eleventyConfig => {
     'src/assets/css/global.css': 'src/_includes/global.css'
   });
 
+  eleventyConfig.addPassthroughCopy('src/_redirects');
+
   // 	--------------------- general config -----------------------
   return {
     // Pre-process *.md, *.html and global data files files with: (default: `liquid`)
